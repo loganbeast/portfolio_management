@@ -1,7 +1,19 @@
 [project]
 name = "portfolio-management"
 version = "0.1.0"
-description = "Add your description here"
+description = "A project help user control their portfolio investment"
 readme = "README.md"
+authors = [{name = "Nguyen Son", email = "sonnguyenthanh.vnu@gmail.com"}]
 requires-python = ">=3.13.1"
-dependencies = []
+dependencies = [
+    "fastapi[standard]>=0.115.11",
+    "httpx>=0.28.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
+lint = [
+    "ruff>=0.11.2",
+]
